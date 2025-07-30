@@ -1,4 +1,13 @@
---remove the duplicates for cst_id
+/* This SQL script performs a transformation of customer data from the bronze layer to the silver layer as part of a modern data pipeline. It includes the following steps:
+
+Deduplication: Retains only the most recent record per cst_id using ROW_NUMBER() over cst_create_date.
+
+Data Normalization: Standardizes cst_marital_status and cst_gndr values to readable formats (e.g., 'S' → 'Single', 'M' → 'Male').
+
+Data Cleanup: Removes rows where cst_id is null after insertion.
+
+Next Step (Optional): Highlights the presence of null values in the cst_gndr column (~5,000 rows) and recommends using Python for efficient enrichment or imputation if needed. */
+
 INSERT INTO silver.crm_cust_info (
 cst_id,
 cst_key,
