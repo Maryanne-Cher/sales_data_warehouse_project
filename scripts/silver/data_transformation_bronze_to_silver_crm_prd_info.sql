@@ -1,8 +1,6 @@
 /*
 ===========================================================
-🛠️ Script: transform_crm_prd_info.sql
-📄 Description:
-This transformation script extracts, cleans, and loads product data 
+Purpose: This transformation script extracts, cleans, and loads product data 
 from the bronze layer into the silver layer for analytics-ready use.
 
 Key transformations:
