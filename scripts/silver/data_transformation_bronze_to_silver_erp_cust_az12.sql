@@ -1,6 +1,5 @@
 /*
 --------------------------------------------------------------------------------
-Script Name : insert_cleaned_customer_data.sql
 Purpose     : Cleans and inserts customer data from the bronze layer into silver.
               - Replaces 'NAS' prefixes in CID to standardize format.
               - Sets future birthdates to NULL.
