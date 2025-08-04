@@ -1,6 +1,5 @@
 /*
 --------------------------------------------------------------------------------
-Script Name: insert_cleaned_sales_details.sql
 Purpose    : Cleans and inserts sales data from bronze layer to silver layer.
              - Fixes null or incorrect sales and price values.
              - Ensures all prices are positive.
