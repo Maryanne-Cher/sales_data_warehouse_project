@@ -1,1 +1,15 @@
-# sales_data_warehouse_project
+# Sales Data Analysis with SQL and PowerBI
+#### Project Requirements:
+Objective: Develop a modern data warehouse using SQL server to consolidate sales data, enabling analytical reporting and informed decision-making.
+Specifications
+**Data Sources:** Import data from two source systems (ERP and CRM) provided as CSV files
+**Data Quality:** Clean and resolve data quality issues prior to analysis
+**Integration:** Combine both sources into a single, user-friendly data model designed for analytical queries
+**Scope:** Focus on the latest dataset only; historization of data is not required.
+**Documentation:** Provide clear documentation of the data model to support both business stakeholders and analytics team
+
+#### Data Architecture:
+[insert image]
+1.	**Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server Database
+2.	**Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis
+3.  **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics
